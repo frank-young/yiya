@@ -1,49 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>主页</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css"></head>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
 <body>
-
+    <nav class="navbar navbar-light bg-faded">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/Logo.png" srcset="img/Logo@2x.png 2x,img/Logo@3x.png 3x" alt=""></a>
+            <ul class="nav navbar-nav pull-right">
+                <!--                 <li class="nav-item active">
+                    <a class="btn btn-info" href="#">注册</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="#">登录</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="text-center f-banner">
+        <img src="img/frontpic.png" srcset="img/frontpic@2x.png 2x,img/frontpic@3x.png 3x" alt="">
+    </div>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-6">
-                <h3>链接</h3>
-                <p>
-                    <a href="#">这是链接</a>
-                </p>
-                <h3>按钮</h3>
-
-                <p>
-                    <button class="btn btn-primary">测试</button>
-                    <button class="btn btn-secondary">发送验证码</button>
-                    <button class="btn btn-info">发送验证码</button> <br>
-                    <hr>
-                    <button class="btn btn-primary" disabled>禁止状态</button>
-                    <button class="btn btn-secondary" disabled>禁止状态</button>
-                    <button class="btn btn-info" disabled>禁止状态</button>
-
-                </p>
-                <h3>文本框</h3>
-
-                <p>
-                    <input class="form-control" type="text" placeholder="提示信息"></p>
-            </div>
-            <div class="col-xs-6">
-                <div class="shadow-box">
-                    <h1>这是标题</h1>
-                    <h2>这是标题</h2>
-                    <h3>这是标题</h3>
-                    <p>这是内容</p>
+        <div class="f-form-wrap">
+            <div class="shadow-box f-index-box">
+                <h2>小衣匣</h2>
+                <h3>优选童装的贴心搭档</h3>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">
+                        <img class="icon-small" src="img/icon/other/Group2.png" srcset="img/icon/other/Group2@2x.png 2x,img/icon/other/Group2@3x.png 3x" alt="">即刻体验
+                    </button>
                 </div>
             </div>
         </div>
+        <div class="f-form-wrap mt-3r">
+            <h3 class="text-center f-form-title f-form-signup">
+                <img src="img/icon/report-flag.svg.png" srcset="img/icon/report-flag.svg@2x.png 2x,img/icon/report-flag.svg@3x.png 3x" alt="">
+                我们是如何做的？
+            </h3>
+            <div class="shadow-box f-carousel-box">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="./img/animation-finish.gif" alt="First slide">
+                            <div class="carousel-caption">
+                                <h4>1. 录入宝宝的信息档案</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/animation-process-2.gif" alt="Second slide">
+                            <div class="carousel-caption">
+                                <h4>2. 选择递送日期</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/animation-finish.gif" alt="Third slide">
+                            <div class="carousel-caption">
+                                <h4>3. 贴心挑选，专业搭配</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/animation-finish.gif" alt="Four slide">
+                            <div class="carousel-caption">
+                                <h4>4. 来回包邮，无压力试穿</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/animation-finish.gif" alt="Five slide">
+                            <div class="carousel-caption">
+                                <h4>5. 留下小美衣，宝宝成焦点</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f-form-wrap">
+            <h3 class="text-center f-form-title f-form-signup">
+                <img src="img/icon/board.svg.png" srcset="img/icon/board.svg@2x.png 2x,img/icon/board.svg@3x.png 3x" alt="">
+                现在加入我们
+            </h3>
+            <div class="shadow-box f-form-box">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="username" class="f-label-icon">
+                            <img class="f-label-icon" src="img/icon/Cellphone.png" srcset="img/icon/Cellphone@2x.png 2x,img/icon/Cellphone@3x.png 3x" alt="">
+                        </label>
+                        <input type="text" class="form-control" id="username" placeholder="手机号">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="f-label-icon">
+                            <img class="f-label-icon" src="img/icon/Verification.png" srcset="img/icon/Verification@2x.png 2x,img/icon/Verification@3x.png 3x" alt="">
+                        </label>
+                        <input type="text" class="form-control" id="password" placeholder="验证码">
+                        <button type="button" class="btn btn-primary f-verify-btn">
+                            发送验证码
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <label for="username" class="f-label-icon">
+                            <img class="f-label-icon" src="img/icon/Invites.png" srcset="img/icon/Invites@2x.png 2x,img/icon/Invites@3x.png 3x" alt="">
+                        </label>
+                        <input type="text" class="form-control" id="username" placeholder="邀请码">
+                    </div>
+                    <div class="row f-submit-wrap">
+                        <div class="col-xs-5">
+                            <button type="submit" class="btn btn-primary">
+                                <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt=""> 注册
+                            </button>
+                        </div>
+                        <div class="col-xs-7 f-forgot-link">已有账号？<a href="#">立即登录</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
+    <footer class="footer">
+        <div class="container f-form-footer">
+            <img src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+            <div class="f-form-text text-center">
+                &copy; 注册商标 2016. 版权所有
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
-    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="./js/tether.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>
