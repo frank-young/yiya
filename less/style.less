@@ -1,0 +1,109 @@
+@import "base.less";
+
+/**	
+ * frank young  2016-11-22
+ */
+//default font-family 
+body,h1,h2,h3,h4,h5,h6,p,span,div,a,b{
+	.ff(w);
+	color: @text;
+}
+
+// small tool
+.mt-70{
+	margin-top: 70px;
+}
+.mx-w{
+	max-width: 500px;
+	margin: 0 auto;
+}
+.text-center{
+	text-align: center;
+}
+
+//button
+.btn {
+	.border-radius(1.5rem);
+	.transition();
+	.ff(w);
+	text-decoration: none;
+	.p(a,.5rem,1.3rem);
+	outline: none !important;
+
+}
+.btn-info {
+	background-color: @se-text;
+	border: 1px solid @se-text;
+	&:hover,&:active,&:focus,&:active:hover,&:active:focus,&:disabled:hover {
+		background-color: @se-text;
+		border: 1px solid @se-text;
+		opacity: .75;
+	}
+}
+.btn-primary {
+	background-color: @primary;
+	border: 1px solid @primary;
+	&:hover,&:active,&:focus,&:active:hover,&:active:focus,&:disabled:hover {
+		background-color: @primary;
+		border: 1px solid @primary;
+		opacity: .75;
+	}
+}
+
+.btn-secondary {
+	color: @gf;
+	background-color: @se;
+	border: 1px solid @se;
+	&:hover,&:active,&:focus,&:active:hover,&:active:focus,&:disabled:hover {
+		color: @gf;
+		background-color: @se;
+		border: 1px solid @se;
+		opacity: .75;
+	}
+}
+
+//link
+a{
+	color: @primary;
+	text-decoration: underline;	
+	&:hover,&:focus{
+		color: @base;
+	}
+}
+
+//input
+.form-control{
+	.p(a,.5rem,1.2rem);
+	background-color:@gf5; 
+	border: 1px solid @gf5;
+	.border-radius(1.5rem);
+	.ff(w);
+	.transition();
+	color: @text;
+	&:focus{
+		background-color:@gf5; 
+		border: 1px solid @primary;
+	}
+}
+
+//shadow-box
+.shadow-box{
+	.box-shadow(0,5px,25px,rgba(0,0,0,0.1));
+	.border-radius(10px);
+	padding: 2.2rem;
+}
+
+/**	
+ * this is page style
+ */
+// nav
+.navbar{
+	.p(a,1rem,1rem);
+}
+.bg-faded {
+	background-color: @gf;
+	.box-shadow(0,5px,25px,rgba(0,0,0,0.1));
+}
+.pull-right{
+	.f(r);
+}
