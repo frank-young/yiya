@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>家庭档案</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/ion.calendar.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-faded">
+        <div class="">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" srcset="img/Logo@2x.png 2x,img/Logo@3x.png 3x" alt=""></a>
+            <!-- PC端个人档案 -->
+            <ul class="nav navbar-nav hidden-sm-down ml-70px">
+                <li class="nav-item mt-4px mr-30px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span class="f16">个人中心</span>
+                    </a>
+                </li>
+                <li class="nav-item  mt-4px ">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span class="f16 active">盒子计划</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- ./ PC端个人档案 -->
+            <ul class="nav navbar-nav pull-right">
+                <li class="nav-item hidden-md-up mt-4px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span>个人中心</span>
+                    </a>
+                </li>
+                <li class="nav-item hidden-md-up mt-4px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span class="active">我的档案</span>
+                    </a>
+                </li>
+                <li class="nav-item hidden-sm-down y-text-login">
+                    <p>您好，赵子龙</p>
+                </li>
+                <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">退出登录</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="f-box-plan mt-40px">
+            <div class="shadow-box p-a-md-4rem">
+                <div class="row ">
+                    <div class="col-md-12 ">
+                        <h4 class="mt-15px mb-40px text-center">
+                            <img class="icon-middle" src="img/icon/Orders.png" srcset="img/icon/Orders@2x.png 2x,img/icon/Orders@3x.png 3x" alt="">家庭档案信息
+                        </h4>
+                    </div>
+                </div>
+                <div class="row mb-30px">
+                    <div class="col-md-2 h-41px col-xs-2">
+                        <img class="icon-middle" src="img/icon/Location.png" srcset="img/icon/Location@2x.png 2x,img/icon/Location@3x.png 3x" alt=""> <span class="hidden-sm-down">所在城市</span>
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-6 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">省</span><a class="selet_open"><b></b></a>
+                                    <div class="option" id="selProvince">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="province" name="province">
+                            </div>
+                            <div class="col-md-4 col-xs-6 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">市</span><a class="selet_open"><b></b></a>
+                                    <div class="option" id="selCity">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="city" name="city">
+                            </div>
+                            <div class="col-md-4 col-xs-6 m-t-10px p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">区</span><a class="selet_open"><b></b></a>
+                                    <div class="option" id="selDistrict">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="district" name="district">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-30px">
+                    <div class="col-md-2 h-41px col-xs-2">
+                        <img class="icon-middle" src="img/icon/Register2.png" srcset="img/icon/Register2@2x.png 2x,img/icon/Register2@3x.png 3x" alt=""> <span class="hidden-sm-down">具体收获地址</span>
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <div class="row">
+                            <div class="col-md-3  p-0-5px">
+                                <input type="text" name="name" class="form-control" placeholder="收件人姓名">
+                            </div>
+                            <div class="col-md-3 m-t-10px p-0-5px">
+                                <input type="text" name="phone" class="form-control" placeholder="收件人电话">
+                            </div>
+                            <div class="col-md-6 m-t-10px p-0-5px">
+                                <input type="text" name="address" class="form-control" placeholder="收件人详细地址">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 h-41px col-xs-2">
+                        <img class="icon-middle" src="img/icon/Money.png" srcset="img/icon/Money@2x.png 2x,img/icon/Money@3x.png 3x" alt=""> <span class="hidden-sm-down">家庭年收入</span>
+                    </div>
+                    <div class="col-md-10 col-xs-10 p-0-5px">
+                        <div class="row">
+                            <div class="col-md-5 ">
+                                <div class="form-group">
+                                    <div class="select_box form-control f-input-text">
+                                        <span class="select_txt">200～500万</span><a class="selet_open"><b></b></a>
+                                        <div class="option">
+                                            <span>10～20万</span>
+                                            <span>20～50万</span>
+                                            <span>50～100万</span>
+                                            <span>200～500万</span>
+                                            <span>500万以上</span>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="income" name="income">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 offset-md-3 col-xs-10 offset-xs-1 col-lg-4 offset-lg-4">
+                        <img class="w-100" src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <h4 class="mt-15px mb-40px text-center">
+                            <img class="icon-middle" src="img/icon/Orders.png" srcset="img/icon/Orders@2x.png 2x,img/icon/Orders@3x.png 3x" alt="">宝宝衣服主要决策者
+                        </h4>
+                    </div>
+                </div>
+                <div class="row m-a-40px">
+                    <div class="col-md-2 col-xs-3 text-center">
+                        <label class="f-checkbox">
+                            <input type="radio" name="decision" class="f-input-radio" checked>
+                            <span class="f-other-radio"></span> 妈妈
+                        </label>
+                    </div>
+                    <div class="col-md-2 col-xs-3  text-center">
+                        <label class="f-checkbox">
+                            <input type="radio" name="decision" class="f-input-radio">
+                            <span class="f-other-radio"></span> 爸爸
+                        </label>
+                    </div>
+                    <div class="col-md-4 col-xs-6  text-center">
+                        <label class="f-checkbox">
+                            <input type="radio" name="decision" class="f-input-radio">
+                            <span class="f-other-radio"></span> 妈妈爸爸一半一半
+                        </label>
+                    </div>
+                    <div class="col-md-2  col-xs-4 text-center">
+                        <label class="f-checkbox">
+                            <input type="radio" name="decision" class="f-input-radio">
+                            <span class="f-other-radio"></span> 祖辈亲人
+                        </label>
+                    </div>
+                    <div class="col-md-2  col-xs-4 text-center">
+                        <label class="f-checkbox">
+                            <input type="radio" name="decision" class="f-input-radio">
+                            <span class="f-other-radio"></span> 其他人士
+                        </label>
+                    </div>
+                </div>
+                <div class="row mt-15px">
+                    <div class="col-md-12">
+                        <p class="text-center">
+                            <span class="green">*</span> 请填写妈妈或爸爸中主要决策者的基本信息，次要决策者信息选填
+                        </p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 p-0-40px  mt-30px">
+                        <div class="row text-center">
+                            <h4 class="mb-15px text-center">
+                                <img class="icon-middle" src="img/icon/Female.png" srcset="img/icon/Female@2x.png 2x,img/icon/Female@3x.png 3x" alt="">妈妈
+                            </h4>
+                            <label class="f-checkbox">
+                                <input type="radio" name="main_decision" class="f-input-radio" checked>
+                                <span class="f-other-radio"></span> 设为主要决策人
+                            </label>
+                        </div>
+                        <div class="row mb-30px">
+                            <div class="col-md-4 h-41px col-xs-2">
+                                <img class="icon-middle" src="img/icon/Register2.png" srcset="img/icon/Register2@2x.png 2x,img/icon/Register2@3x.png 3x" alt=""> <span class="hidden-sm-down">姓名</span>
+                            </div>
+                            <div class="col-md-8 col-xs-10 p-0-5px">
+                                <input type="text" name="name_1" class="form-control" placeholder="请填写">
+                            </div>
+                        </div>
+                        <div class="row mb-30px js-birthday">
+                            <div class="col-md-4 h-41px col-xs-2">
+                                <img class="icon-middle" src="img/icon/Icon-Baby.png" srcset="img/icon/Icon-Baby@2x.png 2x,img/icon/Icon-Baby@3x.png 3x" alt=""> <span class="hidden-sm-down">出生年月</span>
+                            </div>
+                            <div class="col-md-4 col-xs-4 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">年</span>
+                                    <div class="option year-data">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="year_1" name="year_1">
+                            </div>
+                            <div class="col-md-2 col-xs-3 p-l-0 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">月</span>
+                                    <div class="option month-data">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="month_1" name="month_1">
+                            </div>
+                            <div class="col-md-2 col-xs-3 p-l-0 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">日</span>
+                                    <div class="option day-data">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="day_1" name="day_1">
+                            </div>
+                        </div>
+                        <div class="row mb-30px">
+                            <div class="col-md-1 h-41px col-xs-2">
+                                <img class="icon-middle" src="img/icon/Occupation.png" srcset="img/icon/Occupation@2x.png 2x,img/icon/Occupation@3x.png 3x" alt="">
+                            </div>
+                            <div class="col-md-11  col-xs-10 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">职业</span><a class="selet_open"><b></b></a>
+                                    <div class="option">
+                                        <span>公务员</span>
+                                        <span>公务员</span>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="profession_1" name="profession_1">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1 h-41px col-xs-2">
+                                <img class="icon-middle" src="img/icon/Industrial.png" srcset="img/icon/Industrial@2x.png 2x,img/icon/Industrial@3x.png 3x" alt="">
+                            </div>
+                            <div class="col-md-11  col-xs-10 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">行业</span><a class="selet_open"><b></b></a>
+                                    <div class="option">
+                                        <span>公务员</span>
+                                        <span>公务员</span>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="industry_1" name="industry_1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-0-40px  mt-30px">
+                        <div class="row text-center">
+                            <h4 class="mb-15px text-center">
+                                <img class="icon-middle" src="img/icon/Male.png" srcset="img/icon/Male@2x.png 2x,img/icon/Male@3x.png 3x" alt="">爸爸
+                            </h4>
+                            <label class="f-checkbox">
+                                <input type="radio" name="main_decision" class="f-input-radio" checked>
+                                <span class="f-other-radio"></span> 设为主要决策人
+                            </label>
+                        </div>
+                        <div class="row mb-30px">
+                            <div class="col-md-4 h-41px col-xs-2">
+                                <img class="icon-middle" src="img/icon/Register2.png" srcset="img/icon/Register2@2x.png 2x,img/icon/Register2@3x.png 3x" alt=""> <span class="hidden-sm-down">姓名</span>
+                            </div>
+                            <div class="col-md-8 col-xs-10 p-0-5px">
+                                <input type="text" name="name_2" class="form-control" placeholder="请填写">
+                            </div>
+                        </div>
+                        <div class="row mb-30px js-birthday">
+                            <div class="col-md-4 h-41px col-xs-2">
+                                <img class="icon-middle" src="img/icon/Icon-Baby.png" srcset="img/icon/Icon-Baby@2x.png 2x,img/icon/Icon-Baby@3x.png 3x" alt=""> <span class="hidden-sm-down">出生年月</span>
+                            </div>
+                            <div class="col-md-4 col-xs-4 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">年</span>
+                                    <div class="option year-data">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="year_2" name="year_2">
+                            </div>
+                            <div class="col-md-2 col-xs-3 p-l-0 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">月</span>
+                                    <div class="option month-data">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="month_2" name="month_2">
+                            </div>
+                            <div class="col-md-2 col-xs-3 p-l-0 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">日</span>
+                                    <div class="option day-data">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="day_2" name="day_2">
+                            </div>
+                        </div>
+                        <div class="row mb-30px">
+                            <div class="col-md-1 h-41px col-xs-2">
+                                <img class="icon-middle" src="img/icon/Occupation.png" srcset="img/icon/Occupation@2x.png 2x,img/icon/Occupation@3x.png 3x" alt="">
+                            </div>
+                            <div class="col-md-11  col-xs-10 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">职业</span><a class="selet_open"><b></b></a>
+                                    <div class="option">
+                                        <span>公务员</span>
+                                        <span>公务员</span>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="profession_2" name="profession_2">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1 h-41px col-xs-2">
+                                <img class="icon-middle" src="img/icon/Industrial.png" srcset="img/icon/Industrial@2x.png 2x,img/icon/Industrial@3x.png 3x" alt="">
+                            </div>
+                            <div class="col-md-11  col-xs-10 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">行业</span><a class="selet_open"><b></b></a>
+                                    <div class="option">
+                                        <span>公务员</span>
+                                        <span>公务员</span>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="industry_2" name="industry_2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-30px">
+                <div class="col-xs-12 text-center">
+                    <button class="btn btn-primary next" type="button">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt=""> 完成答卷
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container f-form-footer">
+            <img src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+            <div class="f-form-text text-center">
+                &copy; 注册商标 2016. 版权所有
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/tether.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/china_area.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        //省市区联动菜单
+        $.each(provinceJson, function(k, p) {
+            addTpls("#selProvince", p.id, p.province);
+        });
+        $("#selProvince").delegate('span', 'click', function() {
+            var selValue = $(this).attr('data-value');
+            $("#selCity span").remove();
+            $.each(cityJson, function(k, p) {
+                if (p.id == selValue || p.parent == selValue) {
+                    addTpls("#selCity", p.id, p.city)
+                }
+            });
+
+        })
+
+        $("#selCity").delegate('span', 'click', function() {
+            var selValue = $(this).attr('data-value');
+            $("#selDistrict span").remove();
+            $.each(countyJson, function(k, p) {
+                if (p.id == selValue || p.parent == selValue) {
+                    addTpls("#selDistrict", p.id, p.county);
+                }
+            });
+        });
+    });
+    </script>
+    <!-- 将tools.js放在最后 -->
+    <script src="./js/tools.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

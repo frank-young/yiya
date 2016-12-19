@@ -12,60 +12,228 @@
 
 <body>
     <nav class="navbar navbar-light bg-faded">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/Logo.png" srcset="img/Logo@2x.png 2x,img/Logo@3x.png 3x" alt=""></a>
-            <ul class="nav navbar-nav pull-right">
-                <!--                 <li class="nav-item active">
-                    <a class="btn btn-info" href="#">注册</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="btn btn-primary" href="#">登录</a>
+        <div class="">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Logo.png" srcset="img/Logo@2x.png 2x,img/Logo@3x.png 3x" alt=""></a>
+            <!-- PC端个人档案 登录后显示 -->
+            <!-- <ul class="nav navbar-nav hidden-sm-down ml-70px">
+                <li class="nav-item mt-4px mr-30px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span class="f16">个人中心</span>
+                    </a>
                 </li>
+                <li class="nav-item  mt-4px ">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span class="f16 active" >我的档案</span>
+                    </a>
+                </li>
+            </ul>
+ -->
+            <!-- ./ PC端个人档案 -->
+            <ul class="nav navbar-nav pull-right">
+                <!-- 手机端 -->
+                <!-- 未登录 -->
+                <!-- <li class="nav-item hidden-md-up">
+                    <a class="btn btn-primary" href="#">登录</a>
+                </li> -->
+                <!-- ./未登录  -->
+                <!-- 登录  -->
+                <li class="nav-item hidden-md-up mt-4px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span>个人中心</span>
+                    </a>
+                </li>
+                <li class="nav-item hidden-md-up mt-4px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span class="active">我的档案</span>
+                    </a>
+                </li>
+                <!-- ./登录  -->
+                <!-- 手机端 -->
+                <!-- PC端 -->
+                <!-- 未登录 -->
+                <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">登录</a>
+                </li>
+                <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Register.png" srcset="img/icon/Register@2x.png 2x,img/icon/Register@3x.png 3x" alt="">注册</a>
+                </li>
+                <!-- ./未登录  -->
+                <!-- 登录  -->
+                <!-- <li class="nav-item hidden-sm-down y-text-login">
+                    <p>您好，赵子龙</p>
+                </li>
+                <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">退出登录</a>
+                </li> -->
+                <!-- ./登录  -->
+                <!-- ./PC端 -->
             </ul>
         </div>
     </nav>
+    <div class="text-center f-banner">
+        <img src="img/HeroImage.jpg" srcset="img/HeroImage@2x.jpg 2x,img/HeroImage@3x.jpg 3x" alt="">
+    </div>
     <div class="container">
-        <div class="f-form-wrap mt-5r">
-            <h3 class="text-center f-form-title f-form-signup">
-            <img src="img/icon/board.svg.png" srcset="img/icon/board.svg@2x.png 2x,img/icon/board.svg@3x.png 3x" alt="">
-            现在加入我们
-        </h3>
-            <div class="shadow-box f-form-box">
-                <form class="form">
-                    <div class="form-group">
-                        <label for="username" class="f-label-icon">
-                            <img class="f-label-icon" src="img/icon/Cellphone.png" srcset="img/icon/Cellphone@2x.png 2x,img/icon/Cellphone@3x.png 3x" alt="">
-                        </label>
-                        <input type="text" class="form-control" id="username" placeholder="手机号">
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="f-label-icon">
-                            <img class="f-label-icon" src="img/icon/Verification.png" srcset="img/icon/Verification@2x.png 2x,img/icon/Verification@3x.png 3x" alt="">
-                        </label>
-                        <input type="text" class="form-control" id="password" placeholder="验证码">
-                        <button type="button" class="btn btn-primary f-verify-btn">
-                            发送验证码
-                        </button>
-                    </div>
-                    <div class="form-group">
-                        <label for="username" class="f-label-icon">
-                            <img class="f-label-icon" src="img/icon/Invites.png" srcset="img/icon/Invites@2x.png 2x,img/icon/Invites@3x.png 3x" alt="">
-                        </label>
-                        <input type="text" class="form-control" id="username" placeholder="邀请码">
-                    </div>
-                    <div class="row f-submit-wrap">
-                        <div class="col-xs-5">
-                            <button type="submit" class="btn btn-primary">
-                                <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt=""> 注册
-                            </button>
-                        </div>
-                        <div class="col-xs-7 f-forgot-link">已有账号？<a href="#">立即登录</a></div>
-                    </div>
-                </form>
+        <div class="f-form-wrap">
+            <div class="shadow-box f-index-box p-t-3r">
+                <h2>小衣匣</h2>
+                <h3>优选童装的贴心搭档</h3>
+                <div class="text-center">
+                    <button type="type" class="btn btn-primary" id="to-signup">
+                        <img class="icon-small" src="img/icon/other/Group2.png" srcset="img/icon/other/Group2@2x.png 2x,img/icon/other/Group2@3x.png 3x" alt="" >即刻体验</button>
+                </div>
             </div>
         </div>
+        <div class="row p-l-0 p-r-0 hidden-md-up">
+            <!-- 手机端显示 -->
+            <div class="col-xs-12 ">
+                <div class="f-form-wrap mb-40px">
+                    <h3 class="text-center f-form-title f-form-signup">
+                        <img src="img/icon/report-flag.svg.png" srcset="img/icon/report-flag.svg@2x.png 2x,img/icon/report-flag.svg@3x.png 3x" alt="">我们是如何做的？</h3>
+                    <div class="shadow-box f-carousel-box">
+                        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example" data-slide-to="1"></li>
+                                <li data-target="#carousel-example" data-slide-to="2"></li>
+                                <li data-target="#carousel-example" data-slide-to="3"></li>
+                                <li data-target="#carousel-example" data-slide-to="4"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="./img/animation-finish.gif" alt="First slide">
+                                    <div class="carousel-caption">
+                                        <h4>1. 录入宝宝的信息档案</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/animation-process-2.gif" alt="Second slide">
+                                    <div class="carousel-caption">
+                                        <h4>2. 选择递送日期</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/animation-finish.gif" alt="Third slide">
+                                    <div class="carousel-caption">
+                                        <h4>3. 贴心挑选，专业搭配</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/animation-finish.gif" alt="Four slide">
+                                    <div class="carousel-caption">
+                                        <h4>4. 来回包邮，无压力试穿</h4>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/animation-finish.gif" alt="Five slide">
+                                    <div class="carousel-caption">
+                                        <h4>5. 留下小美衣，宝宝成焦点</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./手机端显示 -->
+        </div>
+        <div class="f-form-wrap">
+            <h3 class="text-center f-form-title f-form-signup hidden-md-up">
+            <img src="img/icon/board.svg.png" srcset="img/icon/board.svg@2x.png 2x,img/icon/board.svg@3x.png 3x" alt="">现在加入我们</h3>
+            <div class="shadow-box p-l-0 p-r-0">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 hidden-sm-down">
+                    <!-- PC端 -->
+                        <h3 class="text-center f-form-title f-form-signup">
+                        我们是如何做的？</h3>
+                        <div class="f-carousel-signup">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <div class="row">
+                                    <ol class="carousel-indicators col-md-6">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active">1.录入宝宝的信息档案</li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1">2.选择递送日期</li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2">3.贴心挑选，专业搭配</li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="3">4.来回包邮，无压力试穿</li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="4">5.留下小美衣，宝宝成焦点</li>
+                                </ol>
+                                <div class="carousel-inner col-md-6" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img src="./img/animation-finish.gif" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/animation-process-2.gif" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/animation-finish.gif" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/animation-finish.gif" alt="Four slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/animation-finish.gif" alt="Five slide">
+                                    </div>
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    <!-- ./PC端 -->
+                </div>
+                <div class="col-lg-6 col-md-12" id="signup">
+                    <div class="f-form-wrap p-b-0">
+                        <h3 class="text-center f-form-title f-form-signup t-i-0 hidden-sm-down">
+                            现在加入我们
+                        </h3>
+                        <div class="f-form-box">
+                            <form class="form" action="" method="post">
+                                <div class="form-group">
+                                    <label for="phone" class="f-label-icon">
+                                        <img class="f-label-icon" src="img/icon/Cellphone.png" srcset="img/icon/Cellphone@2x.png 2x,img/icon/Cellphone@3x.png 3x" alt="">
+                                    </label>
+                                    <input type="text" class="form-control" id="phone" placeholder="手机号">
+                                </div>
+                                <div class="form-group">
+                                    <label for="verify" class="f-label-icon">
+                                        <img class="f-label-icon" src="img/icon/Verification.png" srcset="img/icon/Verification@2x.png 2x,img/icon/Verification@3x.png 3x" alt="">
+                                    </label>
+                                    <input type="text" class="form-control" name="verify" id="verify" placeholder="验证码">
+                                    <button type="button" class="btn btn-primary f-verify-btn" id="second">
+                                        发送验证码
+                                    </button>
+                                </div>
+                                <div class="form-group">
+                                    <label for="code" class="f-label-icon">
+                                        <img class="f-label-icon" src="img/icon/Invites.png" srcset="img/icon/Invites@2x.png 2x,img/icon/Invites@3x.png 3x" alt="">
+                                    </label>
+                                    <input type="text" class="form-control" name="code" id="code" placeholder="邀请码">
+                                </div>
+                                <div class="row f-submit-wrap">
+                                    <div class="col-xs-5">
+                                        <button type="submit" class="btn btn-primary">
+                                            <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt=""> 注册
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-7 f-forgot-link">已有账号？<a href="signin.html">立即登录</a></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
     </div>
-    <footer class="footer">
+    <footer class="footer ">
         <div class="container f-form-footer">
             <img src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
             <div class="f-form-text text-center">
@@ -76,6 +244,7 @@
     <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
     <script src="./js/tether.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/tools.js"></script>
 </body>
 
 </html>

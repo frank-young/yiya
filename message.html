@@ -2,21 +2,22 @@
 <html lang="en">
 
 <head>
-    <title>登录</title>
+    <title>通知页面</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-light bg-faded">
         <div class="">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="#">
                 <img src="img/Logo.png" srcset="img/Logo@2x.png 2x,img/Logo@3x.png 3x" alt=""></a>
             <!-- PC端个人档案 -->
-     <!--        <ul class="nav navbar-nav hidden-sm-down ml-70px">
+            <ul class="nav navbar-nav hidden-sm-down ml-70px">
                 <li class="nav-item mt-4px mr-30px">
                     <a class="y-link-profile" href="#">
                         <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
@@ -26,11 +27,11 @@
                 <li class="nav-item  mt-4px ">
                     <a class="y-link-profile" href="#">
                         <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
-                        <span class="f16 active" >我的档案</span>
+                        <span class="f16 active">我的档案</span>
                     </a>
                 </li>
             </ul>
- -->            <!-- ./ PC端个人档案 -->
+            <!-- ./ PC端个人档案 -->
             <ul class="nav navbar-nav pull-right">
                 <!-- 手机端 -->
                 <!-- 未登录 -->
@@ -55,7 +56,7 @@
                 <!-- 手机端 -->
                 <!-- PC端 -->
                 <!-- 未登录 -->
-                         <li class="nav-item hidden-sm-down">
+                <!--                        <li class="nav-item hidden-sm-down">
                     <a class="btn btn-info y-btn-login" href="#">
                         <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">登录</a>
                 </li>
@@ -63,48 +64,43 @@
                     <a class="btn btn-info y-btn-login" href="#">
                         <img src="img/icon/Register.png" srcset="img/icon/Register@2x.png 2x,img/icon/Register@3x.png 3x" alt="">注册</a>
                 </li>
-
+ -->
                 <!-- ./未登录  -->
                 <!-- 登录  -->
-             <!--    <li class="nav-item hidden-sm-down y-text-login">
+                <li class="nav-item hidden-sm-down y-text-login">
                     <p>您好，赵子龙</p>
                 </li>
                 <li class="nav-item hidden-sm-down">
                     <a class="btn btn-info y-btn-login" href="#">
                         <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">退出登录</a>
-                </li> -->
+                </li>
                 <!-- ./登录  -->
                 <!-- ./PC端 -->
             </ul>
         </div>
-    </nav>    <div class="container">
-        <div class="f-form-wrap mt-5r">
-            <h3 class="text-center f-form-title">
-            <img src="img/icon/Icon-Login.png" srcset="img/icon/Icon-Login@2x.png 2x,img/icon/Icon-Login@3x.png 3x" alt="">登录
-        </h3>
-            <div class="shadow-box f-form-box">
-                <form class="form" action="" method="post">
-                    <div class="form-group">
-                        <label for="phone" class="f-label-icon">
-                            <img class="f-label-icon" src="img/icon/Cellphone.png" srcset="img/icon/Cellphone@2x.png 2x,img/icon/Cellphone@3x.png 3x" alt="">
-                        </label>
-                        <input type="text" class="form-control" name="phone" id="phone" placeholder="手机号">
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="f-label-icon">
-                            <img class="f-label-icon" src="img/icon/Password.png" srcset="img/icon/Password@2x.png 2x,img/icon/Password@3x.png 3x" alt="">
-                        </label>
-                        <input type="password" class="form-control" name="password" id="password" placeholder="密码">
-                    </div>
-                    <div class="row f-submit-wrap">
-                        <div class="col-xs-6 ">
-                            <button type="submit" class="btn btn-primary">
-                                <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt=""> 登录
-                            </button>
+    </nav>
+    <div class="container">
+        <div class="f-success">
+            <div class="shadow-box ">
+                <div class="row">
+                    <div class="col-xs-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 ">
+                        <div class="f-success-box">
+                            <h4 class="text-center mb-30px">
+                                <img class="icon-middle" src="img/icon/Flag.png" srcset="img/icon/Flag@2x.png 2x,img/icon/Flag@3x.png 3x" alt="">通知页面
+                            </h4>
+                            
+                            <p>这是默认的通知页面，可以有很多文字，很多文字。这是默认的通知页面，可以有很多文字，第三行就差不多。</p>
                         </div>
-                        <div class="col-xs-6 f-forgot-link"><a href="forgot.html">忘记密码?</a></div>
                     </div>
-                </form>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-40px mt-40px">
+            <div class="col-xs-12 text-center  ">
+                <div class="f-success-btn">
+                    <button class="btn btn-primary" type="button" id=""><img class="icon-small" src="img/icon/other/Right.png" srcset="img/icon/other/Right@2x.png 2x,img/icon/other/Right@3x.png 3x" alt=""> 操作</button>
+                </div>
+
             </div>
         </div>
     </div>
@@ -117,6 +113,7 @@
         </div>
     </footer>
     <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/tether.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 </body>

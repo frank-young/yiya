@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>我的订单</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-faded">
+        <div class="">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" srcset="img/Logo@2x.png 2x,img/Logo@3x.png 3x" alt=""></a>
+            <!-- PC端个人档案 -->
+            <ul class="nav navbar-nav hidden-sm-down ml-70px">
+                <li class="nav-item mt-4px mr-30px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span class="f16 active">个人中心</span>
+                    </a>
+                </li>
+                <li class="nav-item  mt-4px ">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span class="f16 ">我的档案</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- ./ PC端个人档案 -->
+            <ul class="nav navbar-nav pull-right">
+                <!-- 手机端 -->
+                <!-- 未登录 -->
+                <!-- <li class="nav-item hidden-md-up">
+                    <a class="btn btn-primary" href="#">登录</a>
+                </li> -->
+                <!-- ./未登录  -->
+                <!-- 登录  -->
+                <li class="nav-item hidden-md-up mt-4px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span class="active">个人中心</span>
+                    </a>
+                </li>
+                <li class="nav-item hidden-md-up mt-4px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span>我的档案</span>
+                    </a>
+                </li>
+                <!-- ./登录  -->
+                <!-- 手机端 -->
+                <!-- PC端 -->
+                <!-- 未登录 -->
+                <!--                        <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">登录</a>
+                </li>
+                <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Register.png" srcset="img/icon/Register@2x.png 2x,img/icon/Register@3x.png 3x" alt="">注册</a>
+                </li>
+ -->
+                <!-- ./未登录  -->
+                <!-- 登录  -->
+                <li class="nav-item hidden-sm-down y-text-login">
+                    <p>您好，赵子龙</p>
+                </li>
+                <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">退出登录</a>
+                </li>
+                <!-- ./登录  -->
+                <!-- ./PC端 -->
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="f-success">
+            <div class="shadow-box p-a-md-5rem">
+                <div class="row">
+                    <h4 class=" mb-15px text-center">
+                        <img class="icon-middle" src="img/icon/Orders.png" srcset="img/icon/Orders@2x.png 2x,img/icon/Orders@3x.png 3x" alt="">我的订单
+                    </h4>
+                </div>
+                <div class="row f-myorder-bar hidden-sm-down">
+                    <div class="col-md-7 col-xs-12">
+                        <p>订单内容</p>
+                    </div>
+                    <div class="col-md-5 col-xs-12 m-t-sm-10px ">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-4">
+                                <p>金额</p>
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <p>订单状态</p>
+                            </div>
+                            <div class="col-md-4 col-xs-4">
+                                <p>操作</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f-myorder-item">
+                    <div class="row f-myorder-des">
+                        <div class="col-md-4 col-xs-6 col-lg-3">
+                            <p class="nowrap">订单日期：2016.03.02</p>
+                        </div>
+                        <div class="col-md-8 col-xs-6 col-lg-9">
+                            <p class="nowrap">订单号：102910923</p>
+                        </div>
+                    </div>
+                    <div class="row f-myorder-detail">
+                        <div class="col-md-7 col-xs-12">
+                            <div class="f-myorder-pro">
+                                这是一些详情、这是一些详情、这是一些详情、这是一些详情、这是一些详情、
+                            </div>
+                         </div>
+                        <div class="col-md-5 col-xs-12 m-t-sm-10px">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4">
+                                    <img class="icon-xs hidden-md-up" src="img/icon/Money.png" srcset="img/icon/Money@2x.png 2x,img/icon/Money@3x.png 3x" alt=""><span class="color-gary hidden-sm-down">¥</span><span class="color-red">342</span><span class="font-small">.00</span>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <p class="f-myorder-ctrl">
+                                        <img class="icon-sm hidden-md-up" src="img/icon/Flag.png" srcset="img/icon/Flag@2x.png 2x,img/icon/Flag@3x.png 3x" alt="">待处理
+                                    </p>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <button class="btn btn-primary">结算订单</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f-myorder-item">
+                    <div class="row f-myorder-des">
+                        <div class="col-md-4 col-xs-6 col-lg-3">
+                            <p class="nowrap">订单日期：2016.03.02</p>
+                        </div>
+                        <div class="col-md-8 col-xs-6 col-lg-9">
+                            <p class="nowrap">订单号：102910923</p>
+                        </div>
+                    </div>
+                    <div class="row f-myorder-detail">
+                        <div class="col-md-7 col-xs-12">
+                            <div class="f-myorder-pro">
+                                这是一些详情、这是一些详情、这是一些详情、这是一些详情、这是一些详情、
+                            </div>
+                         </div>
+                        <div class="col-md-5 col-xs-12 m-t-sm-10px">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4">
+                                    <img class="icon-xs hidden-md-up" src="img/icon/Money.png" srcset="img/icon/Money@2x.png 2x,img/icon/Money@3x.png 3x" alt=""><span class="color-gary hidden-sm-down">¥</span><span class="color-red">342</span><span class="font-small">.00</span>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <p class="f-myorder-ctrl">
+                                        <img class="icon-sm hidden-md-up" src="img/icon/Flag.png" srcset="img/icon/Flag@2x.png 2x,img/icon/Flag@3x.png 3x" alt="">待处理
+                                    </p>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <button class="btn btn-primary">结算订单</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f-myorder-item">
+                    <div class="row f-myorder-des">
+                        <div class="col-md-4 col-xs-6 col-lg-3">
+                            <p class="nowrap">订单日期：2016.03.02</p>
+                        </div>
+                        <div class="col-md-8 col-xs-6 col-lg-9">
+                            <p class="nowrap">订单号：102910923</p>
+                        </div>
+                    </div>
+                    <div class="row f-myorder-detail">
+                        <div class="col-md-7 col-xs-12">
+                            <div class="f-myorder-pro">
+                                这是一些详情、这是一些详情、这是一些详情、这是一些详情、这是一些详情、
+                            </div>
+                         </div>
+                        <div class="col-md-5 col-xs-12 m-t-sm-10px">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4">
+                                    <img class="icon-xs hidden-md-up" src="img/icon/Money.png" srcset="img/icon/Money@2x.png 2x,img/icon/Money@3x.png 3x" alt=""><span class="color-gary hidden-sm-down">¥</span><span class="color-red">342</span><span class="font-small">.00</span>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <p class="f-myorder-ctrl">
+                                        <img class="icon-sm hidden-md-up" src="img/icon/Flag.png" srcset="img/icon/Flag@2x.png 2x,img/icon/Flag@3x.png 3x" alt="">待处理
+                                    </p>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <button class="btn btn-primary">结算订单</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f-myorder-item">
+                    <div class="row f-myorder-des">
+                        <div class="col-md-4 col-xs-6 col-lg-3">
+                            <p class="nowrap">订单日期：2016.03.02</p>
+                        </div>
+                        <div class="col-md-8 col-xs-6 col-lg-9">
+                            <p class="nowrap">订单号：102910923</p>
+                        </div>
+                    </div>
+                    <div class="row f-myorder-detail">
+                        <div class="col-md-7 col-xs-12">
+                            <div class="f-myorder-pro">
+                                这是一些详情、这是一些详情、这是一些详情、这是一些详情、这是一些详情、
+                            </div>
+                         </div>
+                        <div class="col-md-5 col-xs-12 m-t-sm-10px">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4">
+                                    <img class="icon-xs hidden-md-up" src="img/icon/Money.png" srcset="img/icon/Money@2x.png 2x,img/icon/Money@3x.png 3x" alt=""><span class="color-gary hidden-sm-down">¥</span><span class="color-red">342</span><span class="font-small">.00</span>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <p class="f-myorder-ctrl">
+                                        <img class="icon-sm hidden-md-up" src="img/icon/Flag.png" srcset="img/icon/Flag@2x.png 2x,img/icon/Flag@3x.png 3x" alt="">已完成
+                                    </p>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <!-- <button class="btn btn-primary">结算订单</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f-myorder-item">
+                    <div class="row f-myorder-des">
+                        <div class="col-md-4 col-xs-6 col-lg-3">
+                            <p class="nowrap">订单日期：2016.03.02</p>
+                        </div>
+                        <div class="col-md-8 col-xs-6 col-lg-9">
+                            <p class="nowrap">订单号：102910923</p>
+                        </div>
+                    </div>
+                    <div class="row f-myorder-detail">
+                        <div class="col-md-7 col-xs-12">
+                            <div class="f-myorder-pro">
+                                这是一些详情、这是一些详情、这是一些详情、这是一些详情、这是一些详情、
+                            </div>
+                         </div>
+                        <div class="col-md-5 col-xs-12 m-t-sm-10px">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-4">
+                                    <img class="icon-xs hidden-md-up" src="img/icon/Money.png" srcset="img/icon/Money@2x.png 2x,img/icon/Money@3x.png 3x" alt=""><span class="color-gary hidden-sm-down">¥</span><span class="color-red">342</span><span class="font-small">.00</span>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <p class="f-myorder-ctrl">
+                                        <img class="icon-sm hidden-md-up" src="img/icon/Flag.png" srcset="img/icon/Flag@2x.png 2x,img/icon/Flag@3x.png 3x" alt="">已完成
+                                    </p>
+                                </div>
+                                <div class="col-md-4 col-xs-4">
+                                    <!-- <button class="btn btn-primary">结算订单</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-xs-5">
+                        <button class="btn btn-info">
+                            <img class="icon-small" src="img/icon/History.png" srcset="img/icon/History@2x.png 2x,img/icon/History@3x.png 3x" alt="">历史订单
+                        </button>
+                    </div>
+                    <div class="col-md-9 col-xs-7">
+                        <div class="f-myorder-page">
+                            <span class="active">1</span>
+                            <span>2</span>
+                            <span>
+                                <img class="icon-small" src="img/icon/next.png" srcset="img/icon/next@2x.png 2x,img/icon/next@3x.png 3x" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container f-form-footer">
+            <img src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+            <div class="f-form-text text-center">
+                &copy; 注册商标 2016. 版权所有
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/tether.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

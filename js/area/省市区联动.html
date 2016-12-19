@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>城市</title>
+<script type="text/javascript" src="http://img.pccoo.cn/js/jquery.js"></script>
+<script type="text/javascript" src="china_area.js"></script>
+<script type="text/javascript">
+$(function() {
+    $.each(provinceJson, function(k, p) {
+        var option = "<option value='" + p.id + "'>" + p.province + "</option>";
+        $("#selProvince").append(option);
+    });
+    $("#selProvince").change(function() {
+        var selValue = $(this).val();
+        $("#selCity option:gt(0)").remove();
+        $.each(cityJson, function(k, p) {
+
+            if (p.id == selValue || p.parent == selValue) {
+                var option = "<option value='" + p.id + "'>" + p.city + "</option>";
+                $("#selCity").append(option);
+            }
+        });
+    });
+    $("#selCity").change(function() {
+        var selValue = $(this).val();
+        $("#selDistrict option:gt(0)").remove();
+        $.each(countyJson, function(k, p) {
+            if (p.parent == selValue) {
+                var option = "<option value='" + p.id + "'>" + p.county + "</option>";
+                $("#selDistrict").append(option);
+            }
+        });
+    });
+});
+</script>
+</head>
+<body>
+<select id="selProvince">
+  <option value="0">--省份--</option>
+</select>
+<select id="selCity">
+  <option value="0">--市--</option>
+</select>
+<select id="selDistrict">
+  <option value="0">--区--</option>
+</select>
+</body>
+</html>

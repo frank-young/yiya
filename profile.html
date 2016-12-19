@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>我的档案</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-faded">
+        <div class="">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" srcset="img/Logo@2x.png 2x,img/Logo@3x.png 3x" alt=""></a>
+            <!-- PC端个人档案 -->
+            <ul class="nav navbar-nav hidden-sm-down ml-70px">
+                <li class="nav-item mt-4px mr-30px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span class="f16">个人中心</span>
+                    </a>
+                </li>
+                <li class="nav-item  mt-4px ">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span class="f16 active">我的档案</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- ./ PC端个人档案 -->
+            <ul class="nav navbar-nav pull-right">
+                <!-- 手机端 -->
+                <!-- 未登录 -->
+                <!-- <li class="nav-item hidden-md-up">
+                    <a class="btn btn-primary" href="#">登录</a>
+                </li> -->
+                <!-- ./未登录  -->
+                <!-- 登录  -->
+                <li class="nav-item hidden-md-up mt-4px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span>个人中心</span>
+                    </a>
+                </li>
+                <li class="nav-item hidden-md-up mt-4px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span class="active">我的档案</span>
+                    </a>
+                </li>
+                <!-- ./登录  -->
+                <!-- 手机端 -->
+                <!-- PC端 -->
+                <!-- 未登录 -->
+                <!--                        <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">登录</a>
+                </li>
+                <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Register.png" srcset="img/icon/Register@2x.png 2x,img/icon/Register@3x.png 3x" alt="">注册</a>
+                </li>
+ -->
+                <!-- ./未登录  -->
+                <!-- 登录  -->
+                <li class="nav-item hidden-sm-down y-text-login">
+                    <p>您好，赵子龙</p>
+                </li>
+                <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">退出登录</a>
+                </li>
+                <!-- ./登录  -->
+                <!-- ./PC端 -->
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <form action="success.html">
+            <div class="f-step  mt-5r mb-40px">
+                <!-- 第一步 -->
+                <div class="f-step-item">
+                    <div class="row f-step-tab">
+                        <div class="col-xs-4 active text-center"><span>1</span>孩子的身体参数</div>
+                        <div class="col-xs-4 text-center"><span>2</span>风格和材质偏好</div>
+                        <div class="col-xs-4 text-center"><span>3</span>上传照片</div>
+                    </div>
+                    <div class="f-form-wrap">
+                        <div class="shadow-box f-profile-box p-a-60px">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="" class="f-input-icon">
+                                            <img src="img/icon/male.svg.png" srcset="img/icon/male.svg@2x.png 2x,img/icon/male.svg@3x.png 3x" alt="">
+                                        </label>
+                                        <input type="text" class="form-control f-input-text" placeholder="宝宝的名字">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="" class="f-input-icon hidden-md-up">
+                                            <img src="img/icon/male.svg.png" srcset="img/icon/male.svg@2x.png 2x,img/icon/male.svg@3x.png 3x" alt="">
+                                        </label>
+                                        <input type="text" class="form-control f-input-text" placeholder="宝宝的昵称（选填）">
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="male" class="f-radio-icon">
+                                                    <input type="radio" id="male" name="sex" class="f-input-radio" checked>
+                                                    <span></span> <img src="img/icon/male.svg.png" srcset="img/icon/male.svg@2x.png 2x,img/icon/male.svg@3x.png 3x" alt="">男宝宝
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="form-group">
+                                                <label for="female" class="f-radio-icon">
+                                                    <input type="radio" id="female" name="sex" class="f-input-radio">
+                                                    <span></span> <img src="img/icon/male.svg.png" srcset="img/icon/male.svg@2x.png 2x,img/icon/male.svg@3x.png 3x" alt="">女宝宝
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <div class="row js-birthday">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="" class="f-input-icon">
+                                                    <img src="img/icon/Icon-Baby.png" srcset="img/icon/Icon-Baby@2x.png 2x,img/icon/Icon-Baby@3x.png 3x" alt="">
+                                                </label>
+                                                <div class="select_box form-control f-input-text">
+                                                    <span class="select_txt">年</span><a class="selet_open"><b></b></a>
+                                                    <div class="option year-data">
+                                                       
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" id="select_value" name="year">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <div class="select_box form-control f-input-text">
+                                                    <span class="select_txt">月</span><a class="selet_open"><b></b></a>
+                                                    <div class="option month-data">
+                                                       
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" id="select_value" name="month">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <div class="select_box form-control f-input-text">
+                                                    <span class="select_txt">日</span><a class="selet_open"><b></b></a>
+                                                    <div class="option day-data">
+                                                       
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" id="select_value" name="day">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="" class="f-input-icon">
+                                            <img src="img/icon/price-stand.svg.png" srcset="img/icon/price-stand.svg@2x.png 2x,img/icon/price-stand.svg@3x.png 3x" alt="">
+                                        </label>
+                                        <div class="select_box form-control f-input-text">
+                                            <span class="select_txt">家中排位 (第几个宝宝)</span><a class="selet_open"></a>
+                                            <div class="option">
+                                                <span>老大</span>
+                                                <span>老二</span>
+                                                <span>老三</span>
+                                                <span>老四</span>
+                                                <span>老五</span>
+                                                <span>以上</span>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" id="select_value" name="range">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-xs-6">
+                                    <div class="form-group f-unit-box">
+                                        <label for="">
+                                            <img src="img/icon/scale.svg.png" srcset="img/icon/scale.svg@2x.png 2x,img/icon/scale.svg@3x.png 3x" alt="">
+                                        </label>
+                                        <input type="text" class="form-control f-input-text" placeholder="身高（选填）"><i>cm</i>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <div class="form-group f-unit-box">
+                                        <label for="">
+                                            <img src="img/icon/leaf.svg.png" srcset="img/icon/leaf.svg@2x.png 2x,img/icon/leaf.svg@3x.png 3x" alt="">
+                                        </label>
+                                        <input type="text" class="form-control f-input-text" placeholder="体重（选填）"><i>kg</i>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <div class="form-group f-unit-box">
+                                        <label for="">
+                                            <img src="img/icon/Waist.png" srcset="img/icon/Waist@2x.png 2x,img/icon/Waist@3x.png 3x" alt="">
+                                        </label>
+                                        <input type="text" class="form-control f-input-text" placeholder="胸围（选填）"><i>cm</i>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <div class="form-group f-unit-box">
+                                        <label for="">
+                                            <img src="img/icon/CombinedShape.png" srcset="img/icon/CombinedShape@2x.png 2x,img/icon/CombinedShape@3x.png 3x" alt="">
+                                        </label>
+                                        <input type="text" class="form-control f-input-text" placeholder="脚长（选填）"><i>cm</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-6 offset-md-3 col-xs-10 offset-xs-1 col-lg-4 offset-lg-4">
+                                    <img class="w-100" src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12  mt-40px">
+                                    <h4 class="text-center"><img class="icon-middle" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">宝宝体型</h4>
+                                    <div class="row mr-l-40">
+                                        <div class="col-xs-4 text-center">
+                                            <label for="size-s" class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <img src="img/icon/Bitmap-s.png" srcset="img/icon/Bitmap-s@2x.png 2x,img/icon/Bitmap-s@3x.png 3x" alt="">
+                                                </div>
+                                                <div class="f-check-text">
+                                                    瘦小猴
+                                                </div>
+                                                <div class="f-check-input">
+                                                    <input type="radio" id="size-s" name="size" class="f-input-radio" checked>
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <label for="size-m" class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <img src="img/icon/Bitmap.png" srcset="img/icon/Bitmap@2x.png 2x,img/icon/Bitmap@3x.png 3x" alt="">
+                                                </div>
+                                                <div class="f-check-text">
+                                                    不胖不瘦
+                                                </div>
+                                                <div class="f-check-input">
+                                                    <input type="radio" id="size-m" name="size" class="f-input-radio">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <label for="size-l" class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <img src="img/icon/Bitmap-l.png" srcset="img/icon/Bitmap-l@2x.png 2x,img/icon/Bitmap-l@3x.png 3x" alt="">
+                                                </div>
+                                                <div class="f-check-text">
+                                                    胖小猪
+                                                </div>
+                                                <div class="f-check-input">
+                                                    <input type="radio" id="size-l" name="size" class="f-input-radio">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12 mt-40px">
+                                    <h4 class="text-center"><img class="icon-middle" src="img/icon/designpalet.svg.png" srcset="img/icon/designpalet.svg@2x.png 2x,img/icon/designpalet.svg@3x.png 3x" alt="">整体肤色</h4>
+                                    <div class="row m-a-20px">
+                                        <div class="col-five text-center">
+                                            <label for="color-1" class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-1"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    雪白
+                                                </div>
+                                                <div class="f-check-input">
+                                                    <input type="radio" id="color-1" name="size" class="f-input-radio" checked>
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five text-center">
+                                            <label for="color-2" class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-2"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    偏白
+                                                </div>
+                                                <div class="f-check-input">
+                                                    <input type="radio" id="color-2" name="size" class="f-input-radio">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five text-center">
+                                            <label for="color-3" class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-3"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    普通
+                                                </div>
+                                                <div class="f-check-input">
+                                                    <input type="radio" id="color-3" name="size" class="f-input-radio">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five text-center">
+                                            <label for="color-4" class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-4"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    小麦
+                                                </div>
+                                                <div class="f-check-input">
+                                                    <input type="radio" id="color-4" name="size" class="f-input-radio">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five text-center">
+                                            <label for="color-5" class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-5"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    黝黑
+                                                </div>
+                                                <div class="f-check-input">
+                                                    <input type="radio" id="color-5" name="size" class="f-input-radio">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-40px">
+                                <div class="col-md-6 offset-md-3 col-xs-10 offset-xs-1 col-lg-4 offset-lg-4">
+                                    <img class="w-100" src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h4 class="text-center mt-30px mb-30px">
+                                    <img class="icon-middle" src="img/icon/Warning.png" srcset="img/icon/Warning@2x.png 2x,img/icon/Warning@3x.png 3x" alt="">以往有那些注意事项
+                                </h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="attention" value="头大" class="f-input-radio">
+                                        <input type="hidden" name="_bodyStyle" value="on">
+                                        <span></span> 头大
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="attention" value="脖子粗" class="f-input-radio">
+                                        <span></span> 唱歌
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="attention" value="手臂粗" class="f-input-radio">
+                                        <span></span> 手臂粗
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="attention" value="胸口宽" class="f-input-radio">
+                                        <span></span> 胸口宽
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="attention" value="手腕粗" class="f-input-radio">
+                                        <span></span> 手腕粗
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="attention" value="肚子大" class="f-input-radio">
+                                        <span></span> 肚子大
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="attention" value="屁股大" class="f-input-radio">
+                                        <span></span> 屁股大
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="attention" value="大腿粗" class="f-input-radio">
+                                        <span></span> 大腿粗
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="attention" value="脚踝粗" class="f-input-radio">
+                                        <span></span> 脚踝粗
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="attention" value="小腿粗" class="f-input-radio">
+                                        <span></span> 小腿粗
+                                    </label>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-md-5 col-xs-4">
+                                            <label class="f-checkbox">
+                                                <input type="checkbox" name="attention" value="" class="f-input-radio">
+                                                <span></span> 其他
+                                            </label>
+                                        </div>
+                                        <div class="col-md-7 col-xs-8">
+                                            <input type="text" class="form-control f-checkbox-other">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <button class="btn btn-primary next" type="button">
+                                <img class="icon-small" src="img/icon/other/Right.png" srcset="img/icon/other/Right@2x.png 2x,img/icon/other/Right@3x.png 3x" alt=""> 下一步
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 第二步 -->
+                <div class="f-step-item">
+                    <div class="row f-step-tab">
+                        <div class="col-xs-4 text-center"><span>1</span>孩子的身体参数</div>
+                        <div class="col-xs-4 text-center active"><span>2</span>风格和材质偏好</div>
+                        <div class="col-xs-4 text-center"><span>3</span>上传照片</div>
+                    </div>
+                    <div class="f-form-wrap">
+                        <div class="shadow-box f-profile-box">
+                            <div class="row">
+                                <h4 class="text-center mt-30px mb-40px">
+                                    <img class="icon-middle" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">请选择以下两个风格更喜欢哪个？
+                                </h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 text-right">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        可爱
+                                    </p>
+                                </div>
+                                <div class="col-xs-6 f-style-select">
+                                    <select name="minbeds1" id="minbeds1" class="ds-n minbeds">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option selected="">3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-five text-center mt-15px">
+                                            1
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            2
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            3
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            4
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        成熟
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 text-right">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        简约
+                                    </p>
+                                </div>
+                                <div class="col-xs-6 f-style-select">
+                                    <select name="minbeds2" id="minbeds2" class="ds-n minbeds">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option selected="">3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-five text-center mt-15px">
+                                            1
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            2
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            3
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            4
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        华丽
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 text-right">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        现代
+                                    </p>
+                                </div>
+                                <div class="col-xs-6 f-style-select">
+                                    <select name="minbeds3" id="minbeds3" class="ds-n minbeds">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option selected="">3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-five text-center mt-15px">
+                                            1
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            2
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            3
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            4
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        复古
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 text-right">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        庄重
+                                    </p>
+                                </div>
+                                <div class="col-xs-6 f-style-select">
+                                    <select name="minbeds4" id="minbeds4" class="ds-n minbeds">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option selected="">3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-five text-center mt-15px">
+                                            1
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            2
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            3
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            4
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        随性
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 text-right">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        文静
+                                    </p>
+                                </div>
+                                <div class="col-xs-6 f-style-select">
+                                    <select name="minbeds5" id="minbeds5" class="ds-n minbeds">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option selected="">3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-five text-center mt-15px">
+                                            1
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            2
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            3
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            4
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        运动
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 text-right">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        素雅
+                                    </p>
+                                </div>
+                                <div class="col-xs-6 f-style-select">
+                                    <select name="minbeds6" id="minbeds6" class="ds-n minbeds">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option selected="">3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-five text-center mt-15px">
+                                            1
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            2
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            3
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            4
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        鲜艳
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 text-right">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        清纯
+                                    </p>
+                                </div>
+                                <div class="col-xs-6 f-style-select">
+                                    <select name="minbeds7" id="minbeds7" class="ds-n minbeds">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option selected="">3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-five text-center mt-15px">
+                                            1
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            2
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            3
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            4
+                                        </div>
+                                        <div class="col-five text-center mt-15px">
+                                            5
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="f-style-img">
+                                    </div>
+                                    <p class="f-style-text text-center">
+                                        叛逆
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mt-40px">
+                                <div class="col-md-6 offset-md-3 col-xs-10 offset-xs-1 col-lg-4 offset-lg-4">
+                                    <img class="w-100" src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h4 class="text-center mt-30px mb-30px">
+                                    <img class="icon-middle" src="img/icon/Interests-A.png" srcset="img/icon/Interests-A@2x.png 2x,img/icon/Interests-A@3x.png 3x" alt="">宝宝的特长爱好
+                                </h4>
+                            </div>
+                            <div class="row  m-a-20px">
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="love" value="舞蹈" class="f-input-radio">
+                                        <span></span> 舞蹈
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="love" value="唱歌" class="f-input-radio">
+                                        <span></span> 唱歌
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="love" value="乐器" class="f-input-radio">
+                                        <span></span> 乐器
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="love" value="画画" class="f-input-radio">
+                                        <span></span> 画画
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="love" value="表演" class="f-input-radio">
+                                        <span></span> 表演
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="love" value="运动" class="f-input-radio">
+                                        <span></span> 运动
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="love" value="自然" class="f-input-radio">
+                                        <span></span> 自然
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="love" value="乐高" class="f-input-radio">
+                                        <span></span> 乐高
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="love" value="机器人" class="f-input-radio">
+                                        <span></span> 机器人
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="love" value="科学探险" class="f-input-radio">
+                                        <span></span> 科学探险
+                                    </label>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <div class="row">
+                                        <div class="col-md-5 col-xs-4">
+                                            <label class="f-checkbox">
+                                                <input type="checkbox" name="love" class="f-input-radio">
+                                                <span></span> 其他
+                                            </label>
+                                        </div>
+                                        <div class="col-md-7 col-xs-8">
+                                            <input type="text" class="form-control f-checkbox-other">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-40px">
+                                <div class="col-md-6 offset-md-3 col-xs-10 offset-xs-1 col-lg-4 offset-lg-4">
+                                    <img class="w-100" src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h4 class="text-center mt-30px mb-30px">
+                                    <img class="icon-middle" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">以下哪些细节是您或宝宝喜欢的？
+                                </h4>
+                            </div>
+                            <div class="row m-a-20px">
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 中式古典
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 韩系
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 日系
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 欧美
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 英伦风
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 异域风格
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 碎花
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 小动物
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 波点、撞色
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 卡通人物
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 格子
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 条纹
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 森女系
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 运动风
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 公主风
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 中性风
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 学院风
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 大牌风
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 印花
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 珍珠
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 亮片
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 立体图案
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 刺绣
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-xs-4">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 钉珠
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row mt-40px">
+                                <div class="col-md-6 offset-md-3 col-xs-10 offset-xs-1 col-lg-4 offset-lg-4">
+                                    <img class="w-100" src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+                                </div>
+                            </div>
+                            <div class="row m-a-120px">
+                                <div class="col-md-12 col-xs-12 mt-40px">
+                                    <h4 class="text-center"><img class="icon-middle" src="img/icon/designpalet.svg.png" srcset="img/icon/designpalet.svg@2x.png 2x,img/icon/designpalet.svg@3x.png 3x" alt="">您或宝宝喜欢什么颜色/色系？</h4>
+                                    <div class="row">
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-1"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    红色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-2"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    橙色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-3"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    黄色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-4"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    绿色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-5"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    蓝色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-6"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    紫色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-7"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    粉色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-8"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    白色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-9"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    黑色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-10"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    灰色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-11"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    裸色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-12"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    棕色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-13"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    金色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-like c-like-14"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    银色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="like" class="f-input-radio js-like">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-40px">
+                                <div class="col-md-6 offset-md-3 col-xs-10 offset-xs-1 col-lg-4 offset-lg-4">
+                                    <img class="w-100" src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+                                </div>
+                            </div>
+                            <div class="row m-a-120px">
+                                <div class="col-md-12 col-xs-12 mt-40px">
+                                    <h4 class="text-center"><img class="icon-middle" src="img/icon/designpalet.svg.png" srcset="img/icon/designpalet.svg@2x.png 2x,img/icon/designpalet.svg@3x.png 3x" alt="">您或宝宝不喜欢什么颜色/色系？</h4>
+                                    <div class="row">
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-1"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    红色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-2"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    橙色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-3"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    黄色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-4"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    绿色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-5"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    蓝色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-6"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    紫色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-7"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    粉色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-8"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    白色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-9"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    黑色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-10"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    灰色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-11"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    裸色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-12"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    棕色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-13"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    金色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="col-five col-md-seven text-center">
+                                            <label class="f-check-icon">
+                                                <div class="f-check-img">
+                                                    <span class="c-dislike c-like-14"></span>
+                                                </div>
+                                                <div class="f-check-text">
+                                                    银色
+                                                </div>
+                                                <div class="f-checkbox f-checkbox-center">
+                                                    <input type="checkbox" name="dislike" class="f-input-radio js-dislike">
+                                                    <span></span>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-40px hidden-md-up">
+                                <div class="col-md-6 offset-md-3 col-xs-10 offset-xs-1 col-lg-4 offset-lg-4">
+                                    <img class="w-100" src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h4 class="text-center mt-30px mb-30px">
+                                    <img class="icon-middle" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">您或宝宝能接受什么版型的衣服？
+                                </h4>
+                            </div>
+                            <div class="row m-a-120px">
+                                <div class="col-five text-center">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 宽松
+                                    </label>
+                                </div>
+                                <div class="col-five text-center">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 略宽松
+                                    </label>
+                                </div>
+                                <div class="col-five text-center">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 正常
+                                    </label>
+                                </div>
+                                <div class="col-five text-center">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 曲线
+                                    </label>
+                                </div>
+                                <div class="col-five text-center">
+                                    <label class="f-checkbox">
+                                        <input type="checkbox" name="detail" class="f-input-radio">
+                                        <span></span> 贴身
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <button class="btn btn-primary next" type="button">
+                                <img class="icon-small" src="img/icon/other/Right.png" srcset="img/icon/other/Right@2x.png 2x,img/icon/other/Right@3x.png 3x" alt=""> 下一步
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 第三步 -->
+                <div class="f-step-item">
+                    <div class="row f-step-tab">
+                        <div class="col-xs-4 text-center"><span>1</span>孩子的身体参数</div>
+                        <div class="col-xs-4 text-center"><span>2</span>风格和材质偏好</div>
+                        <div class="col-xs-4 text-center active"><span>3</span>上传照片</div>
+                    </div>
+                    <div class="f-form-wrap">
+                        <div class="shadow-box f-profile-box">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 text-center f-upload-wrap">
+                                    <div class="f-upload-btn">
+                                        <button type="button" id="imgSelecter" class="btn btn-primary">
+                                            <img class="icon-small" src="img/icon/other/up.png" srcset="img/icon/other/up@2x.png 2x,img/icon/other/up@3x.png 3x" alt="">点击上传全身照片
+                                        </button>
+                                    </div>
+                                    <div class="f-upload-box">
+                                        <img src="img/icon/illustrator.png" srcset="img/icon/illustrator@2x.png 2x,img/icon/illustrator@3x.png 3x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                            <button class="btn btn-back mr-30px" type="button" id=""><img class="icon-small" src="img/icon/Skip.png" srcset="img/icon/Skip@2x.png 2x,img/icon/Skip@3x.png 3x" alt=""> 跳过</button>
+                            <button class="btn btn-primary" type="submit" id=""><img class="icon-small" src="img/icon/other/Right.png" srcset="img/icon/other/Right@2x.png 2x,img/icon/other/Right@3x.png 3x" alt=""> 完成</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="container f-form-footer">
+            <img src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+            <div class="f-form-text text-center">
+                &copy; 注册商标 2016. 版权所有
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/tether.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/tools.js"></script>
+    <script>
+    $(function() {
+        $('form').bind('submit', function() {
+            is_confirm = true;
+        });
+
+        // $(window).bind('beforeunload', function() {
+        //     if (window.is_confirm !== false)
+        //         return '您可能有数据没有保存';
+        // });
+
+        $('.next').on('click', function() {
+            $(this).parents('.f-step-item').hide();
+            $(this).parents('.f-step-item').siblings().hide();
+            $(this).parents('.f-step-item').next().show();
+            $(document).scrollTop(0);
+            return false;
+        });
+        $('#back').on('click', function() {
+            $(this).parents('.f-step-item').hide();
+            $(this).parents('.f-step-item').siblings().hide();
+            $(this).parents('.f-step-item').prev().show();
+            return false;
+        });
+
+    })
+
+    // 滑块
+    $(function() {
+        var select1 = $("#minbeds1"),
+            select2 = $("#minbeds2"),
+            select3 = $("#minbeds3"),
+            select4 = $("#minbeds4"),
+            select5 = $("#minbeds5"),
+            select6 = $("#minbeds6"),
+            select7 = $("#minbeds7")
+
+        createSlider(select1);
+        createSlider(select2);
+        createSlider(select3);
+        createSlider(select4);
+        createSlider(select5);
+        createSlider(select6);
+        createSlider(select7);
+
+        $(".minbeds").change(function() {
+            slider.next().slider("value", this.selectedIndex + 1);
+        });
+
+        function createSlider(select) {
+            var slider = $("<div class='slider'></div>").insertAfter(select).slider({
+                min: 1,
+                max: 5,
+                range: "min",
+                value: select[0].selectedIndex + 1,
+                slide: function(event, ui) {
+                    select[0].selectedIndex = ui.value - 1;
+                }
+            });
+        }
+
+    });
+
+    //颜色互斥判断
+    $(function() {
+        var like = $('.js-like')
+        var dislike = $('.js-dislike')
+
+        like.on('click',function(event){
+            var num =  like.index(this)
+            var check = $(this).prop("checked")
+            if(check){
+                dislike.eq(num).prop("checked",false)
+            }
+        })
+
+        dislike.on('click',function(event){
+            var num =  dislike.index(this)
+            var check = $(this).prop("checked")
+            if(check){
+                like.eq(num).prop("checked",false)
+            }
+        })
+
+    })
+    </script>
+
+<script src="http://cdn.staticfile.org/webuploader/0.1.5/webuploader.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var uploader = WebUploader.create({
+        auto: true,
+        swf: "http://cdn.staticfile.org/webuploader/0.1.5/Uploader.swf",
+        server: '/imgUploader',
+        pick: '#imgSelecter',
+        resize: true,
+        accept:{
+            title: '请选择图片文件',
+            extensions: 'gif,jpg,jpeg,png',
+            mimeTypes: 'image/*'
+        },
+        compress:{quality:80},
+        fileSingleSizeLimit: 2 * 1024 * 1024
+    });
+    uploader.on("uploadBeforeSend", function(obj, data, headers){
+        headers["X-CSRF-TOKEN"] =csrfToken;
+    });
+    uploader.on('startUpload', function() {
+            alertMsg("正在上传，请稍候。");
+        });
+    uploader.on('uploadError', function(file, reason) {
+            alertMsg("上传失败，请稍候再试。");
+        });
+    uploader.on('uploadSuccess', function( file, response ) {
+        console.log(response);
+    });
+
+</script>
+</body>
+
+</html>

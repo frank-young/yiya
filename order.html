@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>订单结算</title>
+    <meta charset="utf-8">
+    <meta value="" name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/style.css"></head>
+
+<body>
+    <nav class="navbar navbar-light bg-faded">
+        <div class="">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" srcset="img/Logo@2x.png 2x,img/Logo@3x.png 3x" alt=""></a>
+            <!-- PC端个人档案 -->
+            <ul class="nav navbar-nav hidden-sm-down ml-70px">
+                <li class="nav-item mt-4px mr-30px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span class="f16 active">个人中心</span>
+                    </a>
+                </li>
+                <li class="nav-item  mt-4px ">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span class="f16 ">我的档案</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- ./ PC端个人档案 -->
+            <ul class="nav navbar-nav pull-right">
+                <!-- 手机端 -->
+                <!-- 未登录 -->
+                <!-- <li class="nav-item hidden-md-up">
+                <a class="btn btn-primary" href="#">登录</a>
+            </li>
+            -->
+            <!-- ./未登录  -->
+            <!-- 登录  -->
+            <li class="nav-item hidden-md-up mt-4px">
+                <a class="y-link-profile" href="#">
+                    <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                    <span class="active">个人中心</span>
+                </a>
+            </li>
+            <li class="nav-item hidden-md-up mt-4px">
+                <a class="y-link-profile" href="#">
+                    <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                    <span>我的档案</span>
+                </a>
+            </li>
+            <!-- ./登录  -->
+            <!-- 手机端 -->
+            <!-- PC端 -->
+            <!-- 未登录 -->
+            <!--                        <li class="nav-item hidden-sm-down">
+            <a class="btn btn-info y-btn-login" href="#">
+                <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">登录</a>
+        </li>
+        <li class="nav-item hidden-sm-down">
+            <a class="btn btn-info y-btn-login" href="#">
+                <img src="img/icon/Register.png" srcset="img/icon/Register@2x.png 2x,img/icon/Register@3x.png 3x" alt="">注册</a>
+        </li>
+        -->
+        <!-- ./未登录  -->
+        <!-- 登录  -->
+        <li class="nav-item hidden-sm-down y-text-login">
+            <p>您好，赵子龙</p>
+        </li>
+        <li class="nav-item hidden-sm-down">
+            <a class="btn btn-info y-btn-login" href="#">
+                <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">退出登录</a>
+        </li>
+        <!-- ./登录  -->
+        <!-- ./PC端 --> </ul>
+</div>
+</nav>
+<div class="container">
+<div class="f-success">
+    <div class="shadow-box p-a-md-4rem">
+        <div class="row">
+            <h4 class="mb-15px text-center">
+                <img class="icon-middle" src="img/icon/Orders.png" srcset="img/icon/Orders@2x.png 2x,img/icon/Orders@3x.png 3x" alt="">订单结算</h4>
+        </div>
+        <hr>
+        <div class="row f-order">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12 col-xs-5">
+                        <div class="f-order-en">
+                            <span class="hidden-sm-down">#1</span>
+                            Janie&Jack
+                        </div>
+                        <div class="f-order-title">
+                            白色
+                            <span></span>
+                            长裤
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-7">
+                        <div class="f-order-txt">
+                            <p>
+                                <span class="f-order-price">
+                                    <i class="hidden-sm-down">单价：</i>
+                                    <i class="color-red">¥ 299.00</i>
+                                </span>
+                                <span>
+                                    <img class="icon-small" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">
+                                    <i class="hidden-sm-down">尺寸：</i>
+                                    105cm
+                                </span>
+                                <span>
+                                    <img class="icon-small" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">
+                                    <i class="hidden-sm-down">材质：</i>
+                                    全棉
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-order-switch hidden-sm-down">
+                    <a class="btn btn-save active" id="save" href="#">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">保留</a>
+                    <a class="btn btn-cancel" id="back" href="#">
+                        <img class="icon-small" src="img/icon/other/X.png" srcset="img/icon/other/X@2x.png 2x,img/icon/other/X@3x.png 3x" alt="">退回</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-xs-5 col-md-4 text-right-md f-order-p">
+                        <p>家中是否有相似服装：</p>
+                    </div>
+                    <div class="col-xs-7 col-md-8">
+                        <div class="f-order-radio f-order-radio-two">
+                            <span class="f-order-radio-txt">有</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-two" type="radio" value="" name="same_1">
+                                <input class="f-two" type="radio" value="" name="same_1" checked>
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">没有</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>风格偏好：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">喜欢</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="style_1" checked>
+                                <input class="f-three" type="radio" value="" name="style_1">
+                                <input class="f-three" type="radio" value="" name="style_1">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">不喜欢</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>尺寸匹配：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">太小</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="size_1">
+                                <input class="f-three" type="radio" value="" name="size_1" checked>
+                                <input class="f-three" type="radio" value="" name="size_1">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">太大</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>价格：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">虚高</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="price_1">
+                                <input class="f-three" type="radio" value="" name="price_1" checked>
+                                <input class="f-three" type="radio" value="" name="price_1">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">实惠</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <textarea name="" id="" class="form-control">其他评价（选填）</textarea>
+            </div>
+            <div class="col-xs-12 mt-30px hidden-md-up">
+                <div class="f-order-switch text-center">
+                    <a class="btn btn-save active" id="save" href="#">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">保留</a>
+                    <a class="btn btn-cancel" id="back" href="#">
+                        <img class="icon-small" src="img/icon/other/X.png" srcset="img/icon/other/X@2x.png 2x,img/icon/other/X@3x.png 3x" alt="">退回</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row f-order">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12 col-xs-5">
+                        <div class="f-order-en">
+                            <span class="hidden-sm-down">#2</span>
+                            Janie&Jack
+                        </div>
+                        <div class="f-order-title">
+                            白色
+                            <span></span>
+                            长裤
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-7">
+                        <div class="f-order-txt">
+                            <p>
+                                <span class="f-order-price">
+                                    <i class="hidden-sm-down">单价：</i>
+                                    <i class="color-red">¥ 299.00</i>
+                                </span>
+                                <span>
+                                    <img class="icon-small" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">
+                                    <i class="hidden-sm-down">尺寸：</i>
+                                    105cm
+                                </span>
+                                <span>
+                                    <img class="icon-small" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">
+                                    <i class="hidden-sm-down">材质：</i>
+                                    全棉
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-order-switch hidden-sm-down">
+                    <a class="btn btn-save active" id="save" href="#">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">保留</a>
+                    <a class="btn btn-cancel" id="back" href="#">
+                        <img class="icon-small" src="img/icon/other/X.png" srcset="img/icon/other/X@2x.png 2x,img/icon/other/X@3x.png 3x" alt="">退回</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-xs-5 col-md-4 text-right-md f-order-p">
+                        <p>家中是否有相似服装：</p>
+                    </div>
+                    <div class="col-xs-7 col-md-8">
+                        <div class="f-order-radio f-order-radio-two">
+                            <span class="f-order-radio-txt">有</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-two" type="radio" value="" name="same_2">
+                                <input class="f-two" type="radio" value="" name="same_2" checked>
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">没有</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>风格偏好：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">喜欢</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="style_2" checked>
+                                <input class="f-three" type="radio" value="" name="style_2">
+                                <input class="f-three" type="radio" value="" name="style_2">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">不喜欢</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>尺寸匹配：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">太小</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="size_2">
+                                <input class="f-three" type="radio" value="" name="size_2" checked>
+                                <input class="f-three" type="radio" value="" name="size_2">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">太大</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>价格：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">虚高</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="price_2">
+                                <input class="f-three" type="radio" value="" name="price_2" checked>
+                                <input class="f-three" type="radio" value="" name="price_2">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">实惠</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <textarea name="" id="" class="form-control">其他评价（选填）</textarea>
+            </div>
+            <div class="col-xs-12 mt-30px hidden-md-up">
+                <div class="f-order-switch text-center">
+                    <a class="btn btn-save active" id="save" href="#">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">保留</a>
+                    <a class="btn btn-cancel" id="back" href="#">
+                        <img class="icon-small" src="img/icon/other/X.png" srcset="img/icon/other/X@2x.png 2x,img/icon/other/X@3x.png 3x" alt="">退回</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row f-order">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12 col-xs-5">
+                        <div class="f-order-en">
+                            <span class="hidden-sm-down">#3</span>
+                            Janie&Jack
+                        </div>
+                        <div class="f-order-title">
+                            白色
+                            <span></span>
+                            长裤
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-7">
+                        <div class="f-order-txt">
+                            <p>
+                                <span class="f-order-price">
+                                    <i class="hidden-sm-down">单价：</i>
+                                    <i class="color-red">¥ 299.00</i>
+                                </span>
+                                <span>
+                                    <img class="icon-small" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">
+                                    <i class="hidden-sm-down">尺寸：</i>
+                                    105cm
+                                </span>
+                                <span>
+                                    <img class="icon-small" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">
+                                    <i class="hidden-sm-down">材质：</i>
+                                    全棉
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-order-switch hidden-sm-down">
+                    <a class="btn btn-save active" id="save" href="#">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">保留</a>
+                    <a class="btn btn-cancel" id="back" href="#">
+                        <img class="icon-small" src="img/icon/other/X.png" srcset="img/icon/other/X@2x.png 2x,img/icon/other/X@3x.png 3x" alt="">退回</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-xs-5 col-md-4 text-right-md f-order-p">
+                        <p>家中是否有相似服装：</p>
+                    </div>
+                    <div class="col-xs-7 col-md-8">
+                        <div class="f-order-radio f-order-radio-two">
+                            <span class="f-order-radio-txt">有</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-two" type="radio" value="" name="same_3">
+                                <input class="f-two" type="radio" value="" name="same_3" checked>
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">没有</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>风格偏好：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">喜欢</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="style_3" checked>
+                                <input class="f-three" type="radio" value="" name="style_3">
+                                <input class="f-three" type="radio" value="" name="style_3">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">不喜欢</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>尺寸匹配：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">太小</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="size_3">
+                                <input class="f-three" type="radio" value="" name="size_3" checked>
+                                <input class="f-three" type="radio" value="" name="size_3">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">太大</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>价格：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">虚高</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="price_3">
+                                <input class="f-three" type="radio" value="" name="price_3" checked>
+                                <input class="f-three" type="radio" value="" name="price_3">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">实惠</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <textarea name="" id="" class="form-control">其他评价（选填）</textarea>
+            </div>
+            <div class="col-xs-12 mt-30px hidden-md-up">
+                <div class="f-order-switch text-center">
+                    <a class="btn btn-save active" id="save" href="#">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">保留</a>
+                    <a class="btn btn-cancel" id="back" href="#">
+                        <img class="icon-small" src="img/icon/other/X.png" srcset="img/icon/other/X@2x.png 2x,img/icon/other/X@3x.png 3x" alt="">退回</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row f-order">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12 col-xs-5">
+                        <div class="f-order-en">
+                            <span class="hidden-sm-down">#4</span>
+                            Janie&Jack
+                        </div>
+                        <div class="f-order-title">
+                            白色
+                            <span></span>
+                            长裤
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-7">
+                        <div class="f-order-txt">
+                            <p>
+                                <span class="f-order-price">
+                                    <i class="hidden-sm-down">单价：</i>
+                                    <i class="color-red">¥ 299.00</i>
+                                </span>
+                                <span>
+                                    <img class="icon-small" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">
+                                    <i class="hidden-sm-down">尺寸：</i>
+                                    105cm
+                                </span>
+                                <span>
+                                    <img class="icon-small" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">
+                                    <i class="hidden-sm-down">材质：</i>
+                                    全棉
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-order-switch hidden-sm-down">
+                    <a class="btn btn-save active" id="save" href="#">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">保留</a>
+                    <a class="btn btn-cancel" id="back" href="#">
+                        <img class="icon-small" src="img/icon/other/X.png" srcset="img/icon/other/X@2x.png 2x,img/icon/other/X@3x.png 3x" alt="">退回</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-xs-5 col-md-4 text-right-md f-order-p">
+                        <p>家中是否有相似服装：</p>
+                    </div>
+                    <div class="col-xs-7 col-md-8">
+                        <div class="f-order-radio f-order-radio-two">
+                            <span class="f-order-radio-txt">有</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-two" type="radio" value="" name="same_4">
+                                <input class="f-two" type="radio" value="" name="same_4" checked>
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">没有</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>风格偏好：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">喜欢</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="style_4" checked>
+                                <input class="f-three" type="radio" value="" name="style_4">
+                                <input class="f-three" type="radio" value="" name="style_4">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">不喜欢</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>尺寸匹配：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">太小</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="size_4">
+                                <input class="f-three" type="radio" value="" name="size_4" checked>
+                                <input class="f-three" type="radio" value="" name="size_4">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">太大</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>价格：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">虚高</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="price_4">
+                                <input class="f-three" type="radio" value="" name="price_4" checked>
+                                <input class="f-three" type="radio" value="" name="price_4">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">实惠</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <textarea name="" id="" class="form-control">其他评价（选填）</textarea>
+            </div>
+            <div class="col-xs-12 mt-30px hidden-md-up">
+                <div class="f-order-switch text-center">
+                    <a class="btn btn-save active" id="save" href="#">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">保留</a>
+                    <a class="btn btn-cancel" id="back" href="#">
+                        <img class="icon-small" src="img/icon/other/X.png" srcset="img/icon/other/X@2x.png 2x,img/icon/other/X@3x.png 3x" alt="">退回</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row f-order">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12 col-xs-5">
+                        <div class="f-order-en">
+                            <span class="hidden-sm-down">#5</span>
+                            Janie&Jack
+                        </div>
+                        <div class="f-order-title">
+                            白色
+                            <span></span>
+                            长裤
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xs-7">
+                        <div class="f-order-txt">
+                            <p>
+                                <span class="f-order-price">
+                                    <i class="hidden-sm-down">单价：</i>
+                                    <i class="color-red">¥ 299.00</i>
+                                </span>
+                                <span>
+                                    <img class="icon-small" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">
+                                    <i class="hidden-sm-down">尺寸：</i>
+                                    105cm
+                                </span>
+                                <span>
+                                    <img class="icon-small" src="img/icon/Tools.png" srcset="img/icon/Tools@2x.png 2x,img/icon/Tools@3x.png 3x" alt="">
+                                    <i class="hidden-sm-down">材质：</i>
+                                    全棉
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f-order-switch hidden-sm-down">
+                    <a class="btn btn-save active" id="save" href="#">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">保留</a>
+                    <a class="btn btn-cancel" id="back" href="#">
+                        <img class="icon-small" src="img/icon/other/X.png" srcset="img/icon/other/X@2x.png 2x,img/icon/other/X@3x.png 3x" alt="">退回</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-xs-5 col-md-4 text-right-md f-order-p">
+                        <p>家中是否有相似服装：</p>
+                    </div>
+                    <div class="col-xs-7 col-md-8">
+                        <div class="f-order-radio f-order-radio-two">
+                            <span class="f-order-radio-txt">有</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-two" type="radio" value="" name="same_5">
+                                <input class="f-two" type="radio" value="" name="same_5" checked>
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">没有</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>风格偏好：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">喜欢</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="style_5" checked>
+                                <input class="f-three" type="radio" value="" name="style_5">
+                                <input class="f-three" type="radio" value="" name="style_5">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">不喜欢</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>尺寸匹配：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">太小</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="size_5">
+                                <input class="f-three" type="radio" value="" name="size_5" checked>
+                                <input class="f-three" type="radio" value="" name="size_5">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">太大</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-md-4 text-right-md f-order-p">
+                        <p>价格：</p>
+                    </div>
+                    <div class="col-xs-9 col-md-8">
+                        <div class="f-order-radio">
+                            <span class="f-order-radio-txt">虚高</span>
+                            <div class="f-order-radio-i">
+                                <input class="f-three" type="radio" value="" name="price_5">
+                                <input class="f-three" type="radio" value="" name="price_5" checked>
+                                <input class="f-three" type="radio" value="" name="price_5">
+                                <i></i>
+                            </div>
+                            <span class="f-order-radio-txt">实惠</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <textarea name="" id="" class="form-control">其他评价（选填）</textarea>
+            </div>
+            <div class="col-xs-12 mt-30px hidden-md-up">
+                <div class="f-order-switch text-center">
+                    <a class="btn btn-save active" id="save" href="#">
+                        <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">保留</a>
+                    <a class="btn btn-cancel" id="back" href="#">
+                        <img class="icon-small" src="img/icon/other/X.png" srcset="img/icon/other/X@2x.png 2x,img/icon/other/X@3x.png 3x" alt="">退回</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row f-order">
+            <div class="col-md-6 ">
+                <div class="row">
+                    <div class="col-xs-7 text-right p-r-0-lg f-order-total">
+                        <p>搭配服务：</p>
+                        <p>运费：</p>
+                        <p>订单总金额：</p>
+                        <p>总计购买3件商品，享受优惠：</p>
+                    </div>
+                    <div class="col-xs-5 p-l-0-lg f-order-total">
+                        <p>免费</p>
+                        <p>免费</p>
+                        <p>￥1299.00</p>
+                        <p>￥-299.00</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xs-7 text-right p-r-0-lg f-order-all">
+                        <p>折后总计金额：</p>
+                    </div>
+                    <div class="col-xs-5 p-l-0-lg f-order-all">
+                        <p class="color-red">￥1000.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-11 offset-md-1">
+                        <textarea name="" id="" class="form-control h-150px">设计师的留言</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row mb-40px mt-40px">
+    <div class="col-xs-12 text-center  ">
+        <div class="f-success-btn">
+            <button class="btn btn-primary" type="button" id="">
+                <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt="">确认并支付</button>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="footer">
+<div class="container f-form-footer">
+    <img src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+    <div class="f-form-text text-center">&copy; 注册商标 2016. 版权所有</div>
+</div>
+</footer>
+<script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/tether.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>收货地址</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <link rel="stylesheet" href="./css/ion.calendar.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-faded">
+        <div class="">
+            <a class="navbar-brand" href="#">
+                <img src="img/Logo.png" srcset="img/Logo@2x.png 2x,img/Logo@3x.png 3x" alt=""></a>
+            <!-- PC端个人档案 -->
+            <ul class="nav navbar-nav hidden-sm-down ml-70px">
+                <li class="nav-item mt-4px mr-30px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span class="f16">个人中心</span>
+                    </a>
+                </li>
+                <li class="nav-item  mt-4px ">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span class="f16 active">盒子计划</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- ./ PC端个人档案 -->
+            <ul class="nav navbar-nav pull-right">
+                <li class="nav-item hidden-md-up mt-4px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/user-round.svg.png" srcset="img/icon/user-round.svg@2x.png 2x,img/icon/user-round.svg@3x.png 3x" alt="">
+                        <span>个人中心</span>
+                    </a>
+                </li>
+                <li class="nav-item hidden-md-up mt-4px">
+                    <a class="y-link-profile" href="#">
+                        <img src="img/icon/folder.svg.png" srcset="img/icon/folder.svg@2x.png 2x,img/icon/folder.svg@3x.png 3x" alt="">
+                        <span class="active">我的档案</span>
+                    </a>
+                </li>
+                <li class="nav-item hidden-sm-down y-text-login">
+                    <p>您好，赵子龙</p>
+                </li>
+                <li class="nav-item hidden-sm-down">
+                    <a class="btn btn-info y-btn-login" href="#">
+                        <img src="img/icon/Login.png" srcset="img/icon/Login@2x.png 2x,img/icon/Login@3x.png 3x" alt="">退出登录</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="f-box-plan mt-40px">
+            <div class="shadow-box p-a-md-4rem">
+                <div class="row ">
+                    <div class="col-md-12 ">
+                        <h4 class="mt-15px mb-40px text-center">
+                            <img class="icon-middle" src="img/icon/Location.png" srcset="img/icon/Location@2x.png 2x,img/icon/Location@3x.png 3x" alt="">增加收货地址
+                        </h4>
+                    </div>
+                </div>
+                <div class="row mb-30px">
+                    <div class="col-md-2 h-41px col-xs-2">
+                        <img class="icon-middle" src="img/icon/Location.png" srcset="img/icon/Location@2x.png 2x,img/icon/Location@3x.png 3x" alt=""> <span class="hidden-sm-down">所在城市</span>
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-6 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">省</span><a class="selet_open"><b></b></a>
+                                    <div class="option" id="selProvince">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="province" name="province">
+                            </div>
+                            <div class="col-md-4 col-xs-6 p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">市</span><a class="selet_open"><b></b></a>
+                                    <div class="option" id="selCity">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="city" name="city">
+                            </div>
+                            <div class="col-md-4 col-xs-6 m-t-10px p-0-5px">
+                                <div class="select_box form-control f-input-text">
+                                    <span class="select_txt">区</span><a class="selet_open"><b></b></a>
+                                    <div class="option" id="selDistrict">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="district" name="district">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="row mb-30px">
+                            <div class=" h-41px col-xs-2 col-md-4">
+                            <img class="icon-middle" src="img/icon/Female.png" srcset="img/icon/Female@2x.png 2x,img/icon/Female@3x.png 3x" alt=""> <span class="hidden-sm-down">收件人</span>
+                        </div>
+                        <div class="col-xs-10 col-md-8">
+                            <input type="text" name="name" class="form-control" placeholder="收件人姓名">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row mb-30px">
+                            <div class=" h-41px col-xs-2 col-md-4">
+                            <img class="icon-middle" src="img/icon/Cellphone1.png" srcset="img/icon/Cellphone1@2x.png 2x,img/icon/Cellphone1@3x.png 3x" alt=""> <span class="hidden-sm-down">收件人电话</span>
+                        </div>
+                        <div class="col-xs-10 col-md-8">
+                            <input type="text" name="name" class="form-control" placeholder="收件人电话">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-30px">
+                    <div class="col-md-2 h-41px col-xs-2">
+                        <img class="icon-middle" src="img/icon/Address.png" srcset="img/icon/Address@2x.png 2x,img/icon/Address@3x.png 3x" alt=""> <span class="hidden-sm-down">详细收货地址</span>
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                        <input type="text" name="name" class="form-control" placeholder="详细收货地址">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-30px">
+            <div class="col-xs-12 text-center">
+                <button class="btn btn-primary next" type="button">
+                    <img class="icon-small" src="img/icon/other/Group2Copy.png" srcset="img/icon/other/Group2Copy@2x.png 2x,img/icon/other/Group2Copy@3x.png 3x" alt=""> 保存
+                </button>
+            </div>
+        </div>
+        <div class="shadow-box p-a-md-4rem">
+            <div class="row ">
+                <div class="col-md-12 ">
+                    <h4 class="mt-15px mb-30px text-center">
+                            <img class="icon-middle" src="img/icon/Location.png" srcset="img/icon/Location@2x.png 2x,img/icon/Location@3x.png 3x" alt="">管理收货地址
+                        </h4>
+                </div>
+            </div>
+            <hr>
+            <!-- 注意加上hr -->
+            <div class="row">
+                <div class="col-md-1 f18-xs">
+                    张三
+                </div>
+                <div class="col-md-2 col-xs-12">18709283726</div>
+                <div class="col-md-5 col-xs-12 m-t-10px">上海市浦东区张扬路 1245号 23楼1805室</div>
+                <div class="col-md-2 col-xs-6 text-center m-t-15px-xs">
+                    <button class="btn btn-primary btn-sm set-address">设为默认地址</button>
+                </div>
+                <div class="col-md-1 col-xs-3 text-center m-t-15px-xs">
+                    <button class="btn btn-primary btn-sm">编辑</button>
+                </div>
+                <div class="col-md-1 col-xs-3 text-center m-t-15px-xs">
+                    <button class="btn btn-secondary btn-sm">删除</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-1 f18-xs">
+                    张三
+                </div>
+                <div class="col-md-2 col-xs-12">18709283726</div>
+                <div class="col-md-5 col-xs-12 m-t-10px">上海市浦东区张扬路 1245号 23楼1805室</div>
+                <div class="col-md-2 col-xs-6 text-center m-t-15px-xs">
+                    <button class="btn btn-primary btn-sm set-address">设为默认地址</button>
+                </div>
+                <div class="col-md-1 col-xs-3 text-center m-t-15px-xs">
+                    <button class="btn btn-primary btn-sm">编辑</button>
+                </div>
+                <div class="col-md-1 col-xs-3 text-center m-t-15px-xs">
+                    <button class="btn btn-secondary btn-sm">删除</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-1 f18-xs">
+                    张三
+                </div>
+                <div class="col-md-2 col-xs-12">18709283726</div>
+                <div class="col-md-5 col-xs-12 m-t-10px">上海市浦东区张扬路 1245号 23楼1805室</div>
+                <div class="col-md-2 col-xs-6 text-center m-t-15px-xs">
+                    <button class="btn btn-no btn-sm set-address">默认地址</button>
+                </div>
+                <div class="col-md-1 col-xs-3 text-center m-t-15px-xs">
+                    <button class="btn btn-primary btn-sm">编辑</button>
+                </div>
+                <div class="col-md-1 col-xs-3 text-center m-t-15px-xs">
+                    <button class="btn btn-secondary btn-sm">删除</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-1 f18-xs">
+                    张三
+                </div>
+                <div class="col-md-2 col-xs-12">18709283726</div>
+                <div class="col-md-5 col-xs-12 m-t-10px">上海市浦东区张扬路 1245号 23楼1805室</div>
+                <div class="col-md-2 col-xs-6 text-center m-t-15px-xs">
+                    <button class="btn btn-primary btn-sm set-address">设为默认地址</button>
+                </div>
+                <div class="col-md-1 col-xs-3 text-center m-t-15px-xs">
+                    <button class="btn btn-primary btn-sm">编辑</button>
+                </div>
+                <div class="col-md-1 col-xs-3 text-center m-t-15px-xs">
+                    <button class="btn btn-secondary btn-sm">删除</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="container f-form-footer">
+            <img src="img/icon/Group3Copy.png" srcset="img/icon/Group3Copy@2x.png 2x,img/icon/Group3Copy@3x.png 3x" alt="">
+            <div class="f-form-text text-center">
+                &copy; 注册商标 2016. 版权所有
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/tether.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/china_area.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        //省市区联动菜单
+        $.each(provinceJson, function(k, p) {
+            addTpls("#selProvince", p.id, p.province);
+        });
+        $("#selProvince").delegate('span', 'click', function() {
+            var selValue = $(this).attr('data-value');
+            $("#selCity span").remove();
+            $.each(cityJson, function(k, p) {
+                if (p.id == selValue || p.parent == selValue) {
+                    addTpls("#selCity", p.id, p.city)
+                }
+            });
+
+        })
+
+        $("#selCity").delegate('span', 'click', function() {
+            var selValue = $(this).attr('data-value');
+            $("#selDistrict span").remove();
+            $.each(countyJson, function(k, p) {
+                if (p.id == selValue || p.parent == selValue) {
+                    addTpls("#selDistrict", p.id, p.county);
+                }
+            });
+        });
+    });
+    $(function() {
+        //设置默认地址按钮
+        $('.set-address').on('click', function() {
+            $(this)
+                .removeClass('btn-primary')
+                .addClass('btn-no')
+                .html('默认地址')
+                .parent()
+                .parent()
+                .siblings('.row')
+                .find('.set-address')
+                .removeClass('btn-no')
+                .addClass('btn-primary')
+                .html('设为默认地址')
+
+            //以下用来发请求
+            // $.ajax({
+            //     type: 'POST',
+            //     url: '',
+            //     data: queryParam,
+            //     error: function() { 
+            //     },
+            //     success: function(){
+
+            //     }
+            // });
+
+        })
+
+    });
+    </script>
+    <!-- 将tools.js放在最后 -->
+    <script src="./js/tools.js"></script>
+</body>
+
+</html>
